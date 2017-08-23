@@ -5,6 +5,7 @@ import android.arch.lifecycle.LifecycleRegistryOwner;
 import android.support.v4.app.Fragment;
 
 import com.mckinsey.academy.xblocks.callbacks.Callback;
+import com.mckinsey.academy.xblocks.callbacks.XBlockComponentFragment;
 
 import java.util.Observer;
 
@@ -12,7 +13,7 @@ import java.util.Observer;
  * Fragment with {@link LifecycleRegistryOwner} implementation.
  */
 public abstract class LifecycleOwnerFragment extends Fragment implements LifecycleRegistryOwner,
-        Observer {
+        Observer, XBlockComponentFragment {
 
     private LifecycleRegistry lifecycleRegistry = new LifecycleRegistry(this);
 

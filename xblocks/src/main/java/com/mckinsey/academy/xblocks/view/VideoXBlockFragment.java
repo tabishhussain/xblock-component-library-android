@@ -18,6 +18,7 @@ import com.mckinsey.academy.xblocks.exception.CallbackCastException;
 import com.mckinsey.academy.xblocks.exception.PlayingException;
 import com.mckinsey.academy.xblocks.info.VideoXBlockInfo;
 import com.mckinsey.academy.xblocks.info.XBlockInfo;
+import com.mckinsey.academy.xblocks.info.XBlockUserAnswer;
 import com.mckinsey.academy.xblocks.player.ObservableOoyalaPlayer;
 import com.ooyala.android.OoyalaException;
 import com.ooyala.android.OoyalaNotification;
@@ -298,4 +299,9 @@ public class VideoXBlockFragment extends LifecycleOwnerFragment {
 
     }
 
+
+    @Override
+    public XBlockUserAnswer getUserAnswer() {
+        return null;
+    }
 }
